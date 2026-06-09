@@ -3,10 +3,11 @@ requires = ["setuptools >= 61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "qtaudiosource"
-description = "Python port of qtmultimedia/example/audiosource"
+name = "pyvrp"
+version = "0.0.0"
+description = "Python voice range profiler"
 readme = "README.md"
-keywords = ["qtmultimedia", "audiorecord"]
+keywords = ["voice analysis", "Qt"]
 license = { text = "GPL-2.0 License" }
 classifiers = [
     "Development Status :: 1 - Planning",
@@ -20,4 +21,4 @@ classifiers = [
     "Programming Language :: Python :: 3.14",
 ]
 requires-python = ">=3.10"
-dependencies = ["PySide6", 'ffmpegio']
+dependencies = ["PySide6", "ffmpegio", "pyqtgraph", "numpy", "scipy"]
